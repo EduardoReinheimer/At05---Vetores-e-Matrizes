@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class ex03 {
 	// Constante que define o tamanho do vetor
-	public static final int N = 5;
+	public static final int TAM = 5;
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
-		int[] vetorNumeros = new int[N];
+		int[] vetorNumeros = new int[TAM];
 
 		int maior = 0;
 		int menor = 0;
@@ -45,7 +45,7 @@ public class ex03 {
 		}
 		input.close();
 
-		double media = soma / N;
+		double media = soma / TAM;
 
 		int[] pares = new int[countPar];
 		int[] impares = new int[countImpar];
@@ -90,21 +90,24 @@ public class ex03 {
 		StringBuilder listaPares = new StringBuilder();
 		listaPares.append("Pares: { ");
 		for (int par : pares) {
-			listaPares.append(par + " ");
+			listaPares.append(par);
+			listaPares.append(" ");
 		}
 		listaPares.append("}");
 
 		StringBuilder listaImpares = new StringBuilder();
 		listaImpares.append("Ímpares: { ");
 		for (int impar : impares) {
-			listaImpares.append(impar + " ");
+			listaImpares.append(impar);
+			listaImpares.append(" ");
 		}
 		listaImpares.append("}");
 
 		StringBuilder listaMaioresQueMedia = new StringBuilder();
 		listaMaioresQueMedia.append("Maiores que a média: { ");
 		for (int maiorQueMedia : maioresQueMedia) {
-			listaMaioresQueMedia.append(maiorQueMedia + " ");
+			listaMaioresQueMedia.append(maiorQueMedia);
+			listaMaioresQueMedia.append(" ");
 		}
 		listaMaioresQueMedia.append("}");
 
@@ -118,7 +121,8 @@ public class ex03 {
 		StringBuilder listaNaMedia = new StringBuilder();
 		listaNaMedia.append("Números iguais a média: { ");
 		for (int naMediaNum : naMedia) {
-			listaNaMedia.append(naMediaNum + " ");
+			listaNaMedia.append(naMediaNum);
+			listaNaMedia.append(" ");
 		}
 		listaNaMedia.append("}");
 
