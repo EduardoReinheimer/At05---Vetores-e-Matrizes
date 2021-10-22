@@ -8,7 +8,7 @@ public class ex02 {
 
 		int[] vetor = new int[10];
 
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < vetor.length; i++) {
 			System.out.print("Digite o valor do vetor de posição " + (i + 1) + ": ");
 			vetor[i] = input.nextInt();
 		}
