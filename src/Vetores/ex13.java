@@ -21,7 +21,7 @@ public class ex13 {
 		for (int indice = 0; indice < PESSOAS; indice++) {
 			System.out.print("Digite a idade da pessoa " + (indice + 1) + ": ");
 			idades[indice] = input.nextInt();
-			System.out.println("Digite a altura da pessoa " + (indice + 1) + ": ");
+			System.out.print("Digite a altura da pessoa " + (indice + 1) + ": ");
 			alturas[indice] = input.nextDouble();
 
 			acumuladorIdade += idades[indice];
