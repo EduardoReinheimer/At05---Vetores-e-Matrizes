@@ -42,7 +42,7 @@ public class ex05 {
 		System.out.println(finalMessage);
 	}
 
-	private static boolean IsVogal(char digit) {
+	public static boolean IsVogal(char digit) {
 		switch (Character.toUpperCase(digit)) {
 		case 'A':
 		case 'E':
