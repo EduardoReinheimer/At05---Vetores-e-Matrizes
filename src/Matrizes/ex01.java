@@ -27,7 +27,6 @@ public class ex01 {
 			} while (caracter != 'S' && caracter != 'N');
 			if (caracter == 'N') {
 				matrizNumeros = null;
-				EscreveArquivo();
 			}
 		}
 		if (matrizNumeros == null) {
@@ -45,8 +44,6 @@ public class ex01 {
 					matrizNumeros[linha][coluna] = input.nextInt();
 				}
 			}
-
-			input.close();
 		}
 
 		int soma = 0;
@@ -90,16 +87,17 @@ public class ex01 {
 		System.out.println("Pares: " + countPares);
 		System.out.println("Ímpares: " + countImpares);
 		System.out.println("Soma da diagonal principal: " + calculaDiagonalPrincipal(matrizNumeros));
-		System.out.println("Soma da diagonal secundária;"+ calculaDiagonalSecundaria(matrizNumeros));
+		System.out.println("Soma da diagonal secundária: "+ calculaDiagonalSecundaria(matrizNumeros));
 
 		char caracter = ' ';
 		do {
 			System.out.print("Deseja salvar a matriz em um arquivo? [S/N]: ");
 			caracter = input.next().charAt(0);
 		} while (caracter != 'S' && caracter != 'N');
-		if (caracter == 'N') {
+		if (caracter == 'S') {
 			EscreveArquivo();
 		}
+		input.close();
 
 	}
 
